@@ -96,6 +96,12 @@ section h2 { font-size: 1.6rem; margin-bottom: 28px; text-align: center; letter-
 .app-card:hover { transform: translateY(-3px); border-color: var(--card-accent, var(--accent)); }
 .app-card .head { display: flex; align-items: center; gap: 14px; }
 .app-card img { width: 64px; height: 64px; border-radius: 15px; box-shadow: 0 6px 18px rgba(0,0,0,.4); }
+.app-card .icon-fallback {
+  width: 64px; height: 64px; border-radius: 15px; flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center; font-size: 2rem;
+  background: linear-gradient(160deg, var(--bg-card-2), var(--bg));
+  border: 1px solid var(--border); box-shadow: 0 6px 18px rgba(0,0,0,.4);
+}
 .app-card h3 { font-size: 1.15rem; letter-spacing: -.01em; }
 .app-card .chip {
   display: inline-block; margin-top: 4px; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
