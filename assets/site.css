@@ -89,8 +89,8 @@ p { text-wrap: pretty; }
 
 header.hero { padding: 76px 0 40px; text-align: center; }
 header.hero--left { text-align: left; padding: 88px 0 48px; }
-.hero--left h1 { max-width: 700px; margin-top: 0; }
-.hero--left p.sub { margin: 18px 0 0; max-width: 620px; }
+header.hero--left h1 { max-width: 700px; margin-top: 0; }
+header.hero--left p.sub { margin: 18px 0 0; max-width: 620px; }
 .hero--left .badges { justify-content: flex-start; margin-top: 30px; }
 .btn-primary {
   display: inline-flex; align-items: center; gap: 8px; min-height: 46px;
