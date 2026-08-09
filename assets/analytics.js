@@ -12,8 +12,16 @@
 (function () {
   "use strict";
 
-  /** GA4 measurement ID for this site, e.g. "G-XXXXXXXXXX". */
-  var GA4_ID = "";
+  /**
+   * GA4 measurement ID.
+   *
+   * Property "Harun Yardimci — Web" (549228476) uses a single web stream across
+   * every site rather than one per site: Google warns that several web streams
+   * in one property produce inconsistent results, and the hostname dimension
+   * already separates the sites in reporting. So dayconsole.com and oncallz.com
+   * carry this same ID.
+   */
+  var GA4_ID = "G-NBQ8R68XK0";
 
   /** Cloudflare Web Analytics site token (Dashboard → Web Analytics). */
   var CF_BEACON_TOKEN = "";
