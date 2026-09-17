@@ -110,6 +110,7 @@ header.hero--left p.sub { margin: 18px 0 0; max-width: 620px; }
 .section-head { margin-bottom: 26px; }
 .section-head h2 { text-align: left; margin-bottom: 4px; }
 .section-head p { color: var(--text-dim); max-width: 620px; }
+.contact-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero img.icon {
   width: 112px; height: 112px;
   border-radius: 26px;
