@@ -49,10 +49,12 @@
   }
   </script>
   <style>
-    .shots.wide img { width: min(560px, 82vw); border-radius: 14px; }
-    @media (min-width: 980px) { .shots.wide { justify-content: flex-start; overflow-x: auto; } }
+    .shots.wide { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px; overflow: visible; padding: 4px 0 16px; }
+    .shots.wide figure { margin: 0; }
+    .shots.wide img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; display: block; }
+    .shots.wide figcaption { color: var(--text-dim); font-size: .88rem; margin-top: 8px; }
     .hero-shot { margin: 28px auto 0; max-width: 1080px; }
-    .hero-shot img { width: 100%; height: auto; border-radius: 18px; outline: 1px solid var(--outline-img); outline-offset: -1px; }
+    .hero-shot img { width: 100%; height: auto; display: block; border-radius: 18px; outline: 1px solid var(--outline-img); outline-offset: -1px; }
   </style>
 </head>
 <body>
@@ -120,11 +122,11 @@
       <div class="wrap">
         <h2>Screenshots</h2>
         <div class="shots wide">
-          <img src="/assets/agentcity/district.jpg" alt="Technology district close-up with people, AI agents and the live feed" loading="lazy" width="1440" height="810">
-          <img src="/assets/agentcity/incident.jpg" alt="Database incident: a cracked data silo with responders rushing in" loading="lazy" width="1440" height="810">
-          <img src="/assets/agentcity/journey.jpg" alt="Work journey panel: who opened an issue, who it passed through and who holds it now" loading="lazy" width="1440" height="810">
-          <img src="/assets/agentcity/density.jpg" alt="Density layer showing open and blocked work per department" loading="lazy" width="1440" height="810">
-          <img src="/assets/agentcity/leave-island.jpg" alt="Leave Island with beach, party garden and family park zones" loading="lazy" width="1440" height="810">
+          <figure><img src="/assets/agentcity/district.jpg" alt="Technology district close-up with people, AI agents and the live feed" loading="lazy" decoding="async" width="1440" height="810"><figcaption>Technology district: people, AI agents and the live feed</figcaption></figure>
+          <figure><img src="/assets/agentcity/incident.jpg" alt="Database incident: a cracked data silo with responders rushing in" loading="lazy" decoding="async" width="1440" height="810"><figcaption>Database incident: a cracked silo and responders on the way</figcaption></figure>
+          <figure><img src="/assets/agentcity/journey.jpg" alt="Work journey panel: who opened an issue, who it passed through and who holds it now" loading="lazy" decoding="async" width="1440" height="810"><figcaption>Work journey: who opened it, who it passed through, who holds it now</figcaption></figure>
+          <figure><img src="/assets/agentcity/density.jpg" alt="Density layer showing open and blocked work per department" loading="lazy" decoding="async" width="1440" height="810"><figcaption>Density layer: open and blocked work per department</figcaption></figure>
+          <figure><img src="/assets/agentcity/leave-island.jpg" alt="Leave Island with beach, party garden and family park zones" loading="lazy" decoding="async" width="1440" height="810"><figcaption>Leave Island: beach, party garden and family park</figcaption></figure>
         </div>
         <p style="color: var(--text-dim); font-size: .9rem;">Screenshots use a fictional demo company; all names and work items are made up.</p>
       </div>
