@@ -43,6 +43,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://harun-yardimci.github.io/bilgi-atlasi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://harun-yardimci.github.io/eatwell/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://harun-yardimci.github.io/slasher-legal/privacy.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>yearly</changefreq>
